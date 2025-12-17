@@ -206,42 +206,6 @@ Load Image -> Gemini 图片处理器 -> Save Image
 }
 ```
 
-## 常见问题
-
-### Q: 节点没有显示？
-A: 
-1. 确认文件夹复制到了正确位置
-2. 确认 `__init__.py` 文件存在
-3. 重启 ComfyUI
-4. 查看 ComfyUI 控制台是否有错误信息
-
-### Q: 提示 "google-generativeai 未安装"？
-A: 在 ComfyUI 的 Python 环境中运行：
-```bash
-pip install google-generativeai pillow loguru
-```
-
-### Q: 提示 "未配置 GEMINI_API_KEY"？
-A: 
-1. 设置环境变量，或
-2. 在节点的 `api_key` 参数中直接输入
-
-### Q: 处理速度慢？
-A: 
-1. Gemini API 调用需要网络请求，通常需要 5-10 秒
-2. 确保网络连接稳定
-3. 如果在国内，可能需要使用代理
-
-### Q: 如何使用代理？
-A: 在启动 ComfyUI 前设置代理环境变量：
-```bash
-export HTTP_PROXY=http://proxy:port
-export HTTPS_PROXY=http://proxy:port
-```
-
-### Q: 支持批量处理吗？
-A: 支持！ComfyUI 会自动处理批量输入的每张图片。
-
 ## 技术细节
 
 ### 节点类型
