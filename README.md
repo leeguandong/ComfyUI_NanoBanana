@@ -24,14 +24,6 @@ cp -r comfyui_nodes /path/to/ComfyUI/custom_nodes/gemini_processor
 ln -s /path/to/Photo_colorizer/ph/nano/comfyui_nodes /path/to/ComfyUI/custom_nodes/gemini_processor
 ```
 
-Windows 用户：
-```powershell
-# 复制文件夹
-xcopy /E /I comfyui_nodes C:\path\to\ComfyUI\custom_nodes\gemini_processor
-
-# 或创建符号链接（需要管理员权限）
-mklink /D C:\path\to\ComfyUI\custom_nodes\gemini_processor D:\common_tools\Photo_colorizer\ph\nano\comfyui_nodes
-```
 
 ### 2. 安装依赖
 
@@ -41,12 +33,8 @@ mklink /D C:\path\to\ComfyUI\custom_nodes\gemini_processor D:\common_tools\Photo
 # 进入 ComfyUI 目录
 cd /path/to/ComfyUI
 
-# 激活虚拟环境（如果使用）
-# Windows: .\venv\Scripts\activate
-# Linux/Mac: source venv/bin/activate
-
 # 安装依赖
-pip install google-generativeai pillow loguru
+pip install google-genai pillow loguru
 ```
 
 ### 3. 设置 API Key
