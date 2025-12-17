@@ -103,7 +103,6 @@ set GEMINI_API_KEY=your_api_key_here
 |------|------|----------|
 | **gemini-2.5-flash-image-preview** | Gemini 2.5 Flash Image（推荐） | 图片处理、老照片修复、上色等任务 |
 | **gemini-2.0-flash-exp** | Gemini 2.0 Flash Experimental | 实验性功能，可能有新特性 |
-| **gemini-exp-1206** | Gemini Experimental 1206 | 实验版本，速度可能更快 |
 
 ### 宽高比选项
 
